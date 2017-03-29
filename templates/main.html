@@ -1,0 +1,33 @@
+
+<div class="row"  >
+    <div class="col col-xs-8">
+        <div ng-controller="CarouselDemoCtrl">
+            <div style="height: 255px">
+                <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                    <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                        <img class="slider_img" ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                            <p>{{slide.text}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="checkbox">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="col col-xs-4">2</div>
+</div>
+
+
+
