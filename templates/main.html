@@ -111,11 +111,15 @@
 
 </div>
 
-<div class="container popular">
-    <p class="popular_head"> Популярные работы </p>
+<div class="container popular " ng-controller="popularController">
+    <p class="popular_head"> Популярные  работы </p>
+    <div class="row">
+    <pop-work-item class="col col-sm-3 popular_item" ng-repeat="item in popItem"></pop-work-item>
+    </div>
 
-    <pop-worck-item></pop-worck-item>
-
+    <button class="popular_button">
+            Сотреть все работы
+    </button>
 </div>
 
 
