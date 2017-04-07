@@ -1,5 +1,5 @@
 <div ng-controller="mainPageCtrl" >
-    <div class="row" >
+    <div class="row" ng-show="onlyOne">
         <div class="col col-xs-12 col-md-8">
             <div ng-controller="CarouselDemoCtrl">
                 <div >
@@ -66,7 +66,7 @@
         </div>
     </div>
 
-    <div class="row line">
+    <div class="row line" ng-show="onlyOne" >
         <div class="col col-xs-12 col-md-4">
             <div class="row">
                 <div class="col col-xs-6 line_img_wrap">
@@ -109,7 +109,7 @@
 
     </div>
 
-    <div class="container popular " ng-controller="popularController">
+    <div ng-show="onlyOne" class="container popular " ng-controller="popularController">
         <p class="popular_head"> Популярные  работы </p>
         <div class="row">
         <pop-work-item  class="col col-sm-3 popular_item" ng-repeat="item in popItem"></pop-work-item>
@@ -121,13 +121,15 @@
 
     </div>
 
-    <div class="one_pic" ng-controller="onePicCtrl" >
-        <p class="one_pic_name">{{id}}</p>
+    <div ng-show="!onlyOne"  class="one_pic" ng-controller="onePicCtrl" >
+        <button ng-show="!onlyOne" ng-click="prev()" class="popular_button prev_btn"> <- Назад</button>
+
+        <p class="one_pic_name">{{name}}</p>
 
         <div class="row">
             <div class="col col-xs-3">
                 <div class="one_pic_main_img_wrap">
-                    <img ng-src="tree.jpeg">
+                    <img ng-src="{{img}}">
                 </div>
                 <div class="one_pic_little_pics">
                     <div class="row">
@@ -139,9 +141,9 @@
                 </div>
             </div>
             <div class="col col-xs-9 one_pic_descr_block">
-                <p class="one_pic_size"> {{name}} </p>
-                <p class="one_pic_material"> {{size}} </p>
-                <button class="add_button">local</button>
+                <p class="one_pic_size"> {{size}} </p>
+                <p class="one_pic_material"> {{materials}} </p>
+                <button class="add_button">В избранное</button>
                 <div class="line"></div>
                 <div class="one_pic_description">
                     {{description}}

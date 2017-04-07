@@ -25,14 +25,16 @@ app.controller('popularController', function ($scope, $rootScope, $routeParams) 
                image : 'slider.jpg',
                name : 'Весеннее настроение3',
                size : '40 X 50',
-               materials: 'масло, холст'
+               materials: 'масло, холст',
+               description: 'lorem kkks wejknf awkjenf jeknfjawdbv ajkwbfkjabwefjksdb asfvaer'
            },
            {
                id: 4,
                image : 'slider.jpg',
                name : 'Весеннее настроение4',
                size : '40 X 50',
-               materials: 'масло, холст'
+               materials: 'масло, холст',
+               description: 'lorem kkks wejknf awkjenf jeknfjawdbv ajkwbfkjabwefjksdb asfvaer'
            },
            {
                id: 5,
@@ -40,6 +42,7 @@ app.controller('popularController', function ($scope, $rootScope, $routeParams) 
                name : 'Весеннее настроение5',
                size : '40 X 50',
                materials: 'масло, холст',
+               description: 'lorem kkks wejknf awkjenf jeknfjawdbv ajkwbfkjabwefjksdb asfvaer'
 
            },
            {
@@ -47,21 +50,24 @@ app.controller('popularController', function ($scope, $rootScope, $routeParams) 
                image : 'slider.jpg',
                name : 'Весеннее настроение6',
                size : '40 X 50',
-               materials: 'масло, холст'
+               materials: 'масло, холст',
+               description: 'lorem kkks wejknf awkjenf jeknfjawdbv ajkwbfkjabwefjksdb asfvaer'
            },
            {
                id: 7,
                image : 'slider.jpg',
                name : 'Весеннее настроение7',
                size : '40 X 50',
-               materials: 'масло, холст'
+               materials: 'масло, холст',
+               description: 'lorem kkks wejknf awkjenf jeknfjawdbv ajkwbfkjabwefjksdb asfvaer'
            },
            {
                id: 8,
                image : 'slider.jpg',
                name : 'Весеннее настроение8',
                size : '40 X 50',
-               materials: 'масло, холст'
+               materials: 'масло, холст',
+               description: 'lorem kkks wejknf awkjenf jeknfjawdbv ajkwbfkjabwefjksdb asfvaer'
            },
        ];
 
@@ -79,6 +85,7 @@ app.controller('popularController', function ($scope, $rootScope, $routeParams) 
             messageSize: $scope.popItem = size,
             messageMaterials: $scope.popItem = materials,
             messageDeascription: $scope.popItem = description,
+            mesHideOther: $scope.hideit = false,
         });
     }
 

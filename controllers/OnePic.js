@@ -16,4 +16,6 @@ app.controller('onePicCtrl', function ($scope, $routeParams ) {
 
 
 
+
+
 });

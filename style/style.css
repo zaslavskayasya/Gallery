@@ -255,6 +255,9 @@ h4 {
 .one_pic_main_img_wrap img {
   width: 100%;
 }
+.prev_btn {
+  margin-left: -130px;
+}
 /* FOOTER */
 .footer {
   background-color: #1f1f1f;
