@@ -1,126 +1,156 @@
-
-<div class="row"  >
-    <div class="col col-xs-12 col-md-8">
-        <div ng-controller="CarouselDemoCtrl">
-            <div >
-                <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                    <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                        <img class="slider_img" ng-src="{{slide.image}}" style="margin:auto;">
-                        <div class="carousel-caption">
-                            <p>{{slide.text}}</p>
-                            <button class="carousel_button"> Read more</button>
+<div ng-controller="mainPageCtrl" >
+    <div class="row" >
+        <div class="col col-xs-12 col-md-8">
+            <div ng-controller="CarouselDemoCtrl">
+                <div >
+                    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                        <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                            <img class="slider_img" ng-src="{{slide.image}}" style="margin:auto;">
+                            <div class="carousel-caption">
+                                <p>{{slide.text}}</p>
+                                <button class="carousel_button"> Read more</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
 
-                    <div class="checkbox">
+                        <div class="checkbox">
 
+                        </div>
                     </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col col-xs-12 col-md-4">
+            <div class="author_block">
+                <div class="author_avatar_wrap">
+                    <img class="author_avatar" src="./img/avatar.png">
                 </div>
 
+                <h4 class="author_name"> Ольга Тарасенко</h4>
+                <p class="author_description">Художник , акварелист, иллюстратор </p>
+                <ul class="author_social">
+                    <li class="author_social_item">
+                        <a class="author_social_link" href="#">
+                            <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+                            <span class="author_social_hidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="author_social_item">
+                        <a class="author_social_link" href="#">
+                            <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+                            <span class="author_social_hidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="author_social_item">
+                        <a class="author_social_link" href="#">
+                            <i class="fa fa-2x fa-dribbble" aria-hidden="true"></i>
+                            <span class="author_social_hidden">Dribble</span>
+                        </a>
+
+                    </li>
+                    <li class="author_social_item">
+                        <a class="author_social_link" href="#">
+                            <i class="fa fa-2x fa-behance" aria-hidden="true"></i>
+                            <span class="author_social_hidden">Behince</span>
+                        </a>
+                    </li>
+                </ul>
+
             </div>
-        </div>
-
-
-
-    </div>
-    <div class="col col-xs-12 col-md-4">
-        <div class="author_block">
-            <div class="author_avatar_wrap">
-                <img class="author_avatar" src="./img/avatar.png">
-            </div>
-
-            <h4 class="author_name"> Ольга Тарасенко</h4>
-            <p class="author_description">Художник , акварелист, иллюстратор </p>
-            <ul class="author_social">
-                <li class="author_social_item">
-                    <a class="author_social_link" href="#">
-                        <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
-                        <span class="author_social_hidden">Facebook</span>
-                    </a>
-                </li>
-                <li class="author_social_item">
-                    <a class="author_social_link" href="#">
-                        <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-                        <span class="author_social_hidden">Twitter</span>
-                    </a>
-                </li>
-                <li class="author_social_item">
-                    <a class="author_social_link" href="#">
-                        <i class="fa fa-2x fa-dribbble" aria-hidden="true"></i>
-                        <span class="author_social_hidden">Dribble</span>
-                    </a>
-
-                </li>
-                <li class="author_social_item">
-                    <a class="author_social_link" href="#">
-                        <i class="fa fa-2x fa-behance" aria-hidden="true"></i>
-                        <span class="author_social_hidden">Behince</span>
-                    </a>
-                </li>
-            </ul>
 
         </div>
+    </div>
+
+    <div class="row line">
+        <div class="col col-xs-12 col-md-4">
+            <div class="row">
+                <div class="col col-xs-6 line_img_wrap">
+                    <img class="line_img " src="./img/img.jpg">
+                </div>
+                <div class="col col-xs-6 line_item">
+                   <p class="line_item_style"> Акварель </p>
+                    <p class="line_item_name"> Весеннее натроение </p>
+                    <button class="line_item_button"> Подробнее </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col col-xs-12 col-md-4">
+            <div class="row">
+                <div class="col col-xs-6 line_img_wrap">
+                    <img class="line_img " src="./img/img.jpg">
+                </div>
+                <div class="col col-xs-6 line_item">
+                    <p class="line_item_style"> Акварель </p>
+                    <p class="line_item_name"> Весеннее натроение </p>
+                    <button class="line_item_button"> Подробнее </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col col-xs-12 col-md-4">
+            <div class="row">
+                <div class="col col-xs-6 line_img_wrap">
+                    <img class="line_img " src="./img/img.jpg">
+                </div>
+                <div class="col col-xs-6 line_item">
+                    <p class="line_item_style"> Акварель </p>
+                    <p class="line_item_name"> Весеннее натроение </p>
+                    <button class="line_item_button"> Подробнее </button>
+                </div>
+            </div>
+
+        </div>
 
     </div>
-</div>
 
-<div class="row line">
-    <div class="col col-xs-12 col-md-4">
+    <div class="container popular " ng-controller="popularController">
+        <p class="popular_head"> Популярные  работы </p>
         <div class="row">
-            <div class="col col-xs-6 line_img_wrap">
-                <img class="line_img " src="./img/img.jpg">
+        <pop-work-item  class="col col-sm-3 popular_item" ng-repeat="item in popItem"></pop-work-item>
+        </div>
+
+        <button class="popular_button">
+                Сотреть все работы
+        </button>
+
+    </div>
+
+    <div class="one_pic" ng-controller="onePicCtrl" >
+        <p class="one_pic_name">{{id}}</p>
+
+        <div class="row">
+            <div class="col col-xs-3">
+                <div class="one_pic_main_img_wrap">
+                    <img ng-src="tree.jpeg">
+                </div>
+                <div class="one_pic_little_pics">
+                    <div class="row">
+                        <img class="col col-xs-4" ng-src="tree.jpeg">
+                        <img class="col col-xs-4" ng-src="tree.jpeg">
+                        <img class="col col-xs-4" ng-src="tree.jpeg">
+                    </div>
+
+                </div>
             </div>
-            <div class="col col-xs-6 line_item">
-               <p class="line_item_style"> Акварель </p>
-                <p class="line_item_name"> Весеннее натроение </p>
-                <button class="line_item_button"> Подробнее </button>
+            <div class="col col-xs-9 one_pic_descr_block">
+                <p class="one_pic_size"> {{name}} </p>
+                <p class="one_pic_material"> {{size}} </p>
+                <button class="add_button">local</button>
+                <div class="line"></div>
+                <div class="one_pic_description">
+                    {{description}}
+                </div>
             </div>
         </div>
 
-    </div>
-    <div class="col col-xs-12 col-md-4">
-        <div class="row">
-            <div class="col col-xs-6 line_img_wrap">
-                <img class="line_img " src="./img/img.jpg">
-            </div>
-            <div class="col col-xs-6 line_item">
-                <p class="line_item_style"> Акварель </p>
-                <p class="line_item_name"> Весеннее натроение </p>
-                <button class="line_item_button"> Подробнее </button>
-            </div>
-        </div>
-
-    </div>
-    <div class="col col-xs-12 col-md-4">
-        <div class="row">
-            <div class="col col-xs-6 line_img_wrap">
-                <img class="line_img " src="./img/img.jpg">
-            </div>
-            <div class="col col-xs-6 line_item">
-                <p class="line_item_style"> Акварель </p>
-                <p class="line_item_name"> Весеннее натроение </p>
-                <button class="line_item_button"> Подробнее </button>
-            </div>
-        </div>
 
     </div>
 
 </div>
-
-<div class="container popular " ng-controller="popularController">
-    <p class="popular_head"> Популярные  работы </p>
-    <div class="row">
-    <pop-work-item class="col col-sm-3 popular_item" ng-repeat="item in popItem"></pop-work-item>
-    </div>
-
-    <button class="popular_button">
-            Сотреть все работы
-    </button>
-</div>
-
-
 

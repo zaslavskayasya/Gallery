@@ -1,6 +1,11 @@
-<div class="popular_img_wrap">
-    <img class="popular_img" ng-src="{{item.image}}">
-</div>
 
-<p class="popular_name"> {{item.name}}</p>
-<p class="popular_description"> {{item.size}} {{item.materials}}</p>
+<div ng-controller="popularController as pop">
+<div class="popular_img_wrap">
+   <a ng-click="send(item.name, item.id, item.image , item.size, item.materials, item.description)" > <img class="popular_img" ng-src="{{item.image}}" > </a>
+</div>
+   <input ng-model="messageInput" />
+
+<p class="popular_name"> <a  ng-click="send()">{{item.name}} </a></p>
+<p class="popular_description"> {{item.size}} {{item.materials}} {{item.imageUrl}}</p>
+
+</div>

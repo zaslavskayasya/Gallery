@@ -4,7 +4,6 @@ app.config(function($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl : "templates/main.html"
-
         })
         .when("/about", {
             templateUrl : "templates/about.html"
@@ -14,6 +13,12 @@ app.config(function($routeProvider) {
         })
         .when("/contacts", {
             templateUrl : "templates/contacts.html"
-        });
+        })
+        .when("/onePic/:id", {
+            controller: "onePicCtrl",
+            templateUrl: 'templates/OnePic.html'
+        })
+    ;
 });
+
 
