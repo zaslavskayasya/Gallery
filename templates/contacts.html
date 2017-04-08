@@ -1,1 +1,47 @@
-<h5> Contactsss </h5>
+<div ng-controller="ContactsCtrl" class="contacts">
+
+    <div class="row">
+        <div class="col col-xs-4 contacts_block">
+            <p class="section_name">Контакты</p>
+            <p class="contacts_description">
+                Можете связаться с нами или заполнить форму обратной связи
+            </p>
+            <div class="contacts_item_block">
+                <p class="contacts_type">E-mail:</p>
+                <p class="contact_item" >apitech@gmail.com</p>
+            </div>
+
+
+            <div class="contacts_item_block">
+                 <p class="contacts_type">Адрес :</p>
+                 <p class="contact_item" >Одесса, ул. Екатерининская 84</p>
+            </div>
+
+            <div class="contacts_item_block">
+              <p class="contacts_type">Телефон :</p>
+              <p class="contact_item" >+38063 745 6006</p>
+            </div>
+        </div>
+        <div class="col col-xs-6">
+
+            <form class="form">
+                <div class="form-group form_item_top">
+                    <i class="fa fa-user form_item_icon" aria-hidden="true"></i>
+                    <input type="text" placeholder="Имя">
+
+                </div>
+                <div class="form-group  margin-bottom-sm form_item_top">
+                  <i class="fa fa-envelope-o fa-fw form_item_icon" aria-hidden="true"></i>
+                    <input type="email" placeholder="E-mail">
+
+                </div>
+                <div class="form-group form_item_textarea">
+                    <textarea palceholder="Ваше сообщение">Ваше сообщение</textarea>
+
+                </div>
+                <input type="submit" class="popular_button" value="ОТПРАВИТЬ СООБЩЕНИе">
+            </form>
+
+        </div>
+    </div>
+</div>

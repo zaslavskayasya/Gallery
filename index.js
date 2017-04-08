@@ -1,4 +1,4 @@
-var app = angular.module('Gallery', ['ui.bootstrap', 'ngRoute','ngAnimate']);
+var app = angular.module('Gallery', ['ui.bootstrap', 'ngStorage', 'ngRoute','ngAnimate']);
 
 app.config(function($routeProvider) {
     $routeProvider

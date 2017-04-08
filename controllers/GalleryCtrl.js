@@ -8,6 +8,9 @@ app.controller('GalleryCtrl', function ($scope, $rootScope, $routeParams) {
           $scope.check = value;
           console.log(value);
      };
+     $scope.reset = function (value) {
+          $scope.check = value;
+     };
 
 
 
@@ -16,7 +19,7 @@ app.controller('GalleryCtrl', function ($scope, $rootScope, $routeParams) {
           {
                id: 1,
                image : './img/img.jpg',
-               imageUrl : './img/img',
+
                name : 'Весеннее настроение1',
                size : '40 X 50',
                materials: 'масло, холст',

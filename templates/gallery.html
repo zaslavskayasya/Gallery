@@ -1,9 +1,9 @@
-<div ng-controller="GalleryCtrl">
-    <h5> Gallery will be here </h5>
+<div class="gallery" ng-controller="GalleryCtrl">
+    <h5 class="section_name"> Галерея </h5>
     <div class="row">
         <div class="col col-xs-2">
-            <ul class="gallery_fileter">
-                Техника
+            <ul class="gallery_filter">
+                <p class="gallery_group_name">Техника  </p>
                 <li class="gallery_filter_item"><a   class="gallery_filter_link">масло </a></li>
                 <li class="gallery_filter_item"><a class="gallery_filter_link">акварель </a></li>
                 <li class="gallery_filter_item"><a class="gallery_filter_link">холст</a></li>
@@ -11,8 +11,9 @@
 
 
             </ul>
-            <ul class="gallery_fileter">
-                Тематика
+            <ul class="gallery_filter">
+                <p class="gallery_group_name"> Тематика </p>
+                <li class="gallery_filter_item"><a ng-click="reset('')" class="gallery_filter_link">Все </a></li>
                 <li class="gallery_filter_item"><a ng-click="checkFilter('пейзаж')" class="gallery_filter_link">пейзаж </a></li>
                 <li class="gallery_filter_item"><a ng-click="checkFilter('люди')" class="gallery_filter_link"> люди</a></li>
                 <li class="gallery_filter_item"><a ng-click="checkFilter('цветы')"  class="gallery_filter_link"> цветы</a></li>
@@ -32,7 +33,7 @@
             >
 
             </pop-work-item>
-            <button ng-click="more()">more</button>
+            <button class="popular_button" ng-click="more()">Загрузить больше работ</button>
 
         </div>
 

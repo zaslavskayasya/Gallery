@@ -1,6 +1,7 @@
 @base: #1f1f1f;
 @white: #fff;
 @black: #000;
+@grey : #767676;
 @elements : #afa376;
 
 @color-effect: 0.3s ease-out 0.3s;
@@ -208,14 +209,14 @@ h1, h2, h3, h4 {
 }
 
 .popular_img_wrap {
-  width: 100%; /* Ширина области */
-  height: 300px; /* Высота области */
-  margin: 0; /* Обнуляем отступы */
+  width: 100%;
+  height: 300px;
+  margin: 0;
 }
 .popular_img {
-  width: 100%; /* Ширина изображений */
-  height: 100%; /* Высота изображении */
-  object-fit: cover; /* Вписываем фотографию в область */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .popular_item {
   margin: 10px 0px;
@@ -223,6 +224,7 @@ h1, h2, h3, h4 {
 }
 .popular_img {
   width: 100%;
+  cursor: pointer;
 }
 .popular_name {
   text-transform: uppercase;
@@ -308,12 +310,122 @@ h1, h2, h3, h4 {
   margin-left: -130px;
 }
 /* GALLERY*/
+.gallery {
+  text-align: center;
+  padding: 10px 0px 50px 0px;
+  .gallery_filter {
+    list-style: none;
+    padding-left: 0px;
+    text-align: left;
+    .gallery_group_name {
+      font-size: 24px;
+    }
 
-.gallery_item {
-  display: inline-block;
-  width: 300px;
-  padding: 20px;
+    .gallery_filter_item {
+      padding: 10px 0px;
+    }
+    .gallery_filter_link {
+      padding: 10px 30px 10px 10px;
+      transition: @color-effect;
+      text-decoration: none;
+      width: 100%;
+      color: @black;
+      cursor: pointer;
+
+    }
+    .gallery_filter_link:hover {
+      background-color: @elements;
+      border-radius: 3px;
+      color: @white;
+
+    }
+  }
+  .gallery_item {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+  }
+  button {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
 }
+/* CONTACTS*/
+.contacts {
+  padding: 20px 0px 50px;
+
+}
+.section_name {
+  text-transform: uppercase;
+  font-family: @header-font;
+  font-size: 24px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+.contacts_block {
+  font-family: @header-font;
+  font-weight: 500;
+
+  .contacts_description {
+      color: @grey;
+      font-size: 13px ;
+    padding-bottom: 20px;
+  }
+
+  .contacts_item_block {
+    padding: 10px 0px;
+  }
+  .contacts_type {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: @grey;
+    margin-bottom: 0px;
+  }
+  .contact_item {
+    color: @black;
+    font-size: 20px;
+  }
+}
+/* FORM*/
+.form {
+  width: 470px;
+  textarea, input[type="text"],input[type="email"] {
+    background-color: #f6f6f6;
+    color: @grey;
+    padding: 10px 30px;
+    border: 1px solid #9fa2a5;
+  }
+  input::-moz-placeholder {
+    color: #9fa2a5;
+    font-size: 14px;
+  }
+  .form_item_top {
+    display: inline-block;
+    width: 45%;
+    margin: 0px 10px 20px 10px;
+  }
+  .form_item_textarea {
+    margin: 10px;
+    width: 100%;
+  }
+  .form_item_icon {
+    position: absolute;
+    top: 15px;
+    padding-left: 10px;
+    color: @grey;
+  }
+  textarea {
+    overflow: auto;
+    width: 100%;
+    height: 175px;
+    resize: none;
+  }
+  .popular_button {
+    margin-left: 10px;
+  }
+}
+
 
   /* FOOTER */
 .footer {
