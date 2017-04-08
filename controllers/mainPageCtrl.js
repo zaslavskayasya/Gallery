@@ -7,7 +7,7 @@ app.controller('mainPageCtrl', function ($scope, $rootScope, $routeParams) {
         $scope.onlyOne = args.mesHideOther;
         console.log($scope.onlyOne)
 
-    })
+    });
 
     $scope.prev = function () {
         $scope.onlyOne = true;

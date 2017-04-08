@@ -178,10 +178,22 @@ h4 {
 }
 .popular_img_wrap {
   width: 100%;
+  /* Ширина области */
+  height: 300px;
+  /* Высота области */
+  margin: 0;
+  /* Обнуляем отступы */
+}
+.popular_img {
+  width: 100%;
+  /* Ширина изображений */
+  height: 100%;
+  /* Высота изображении */
+  object-fit: cover;
+  /* Вписываем фотографию в область */
 }
 .popular_item {
   margin: 10px 0px;
-  height: 300px;
 }
 .popular_img {
   width: 100%;
@@ -250,13 +262,30 @@ h4 {
   padding: 10px 0px;
 }
 .one_pic_main_img_wrap {
-  padding: 10px 0px;
+  width: 100%;
+  /* Ширина области */
+  height: 300px;
+  /* Высота области */
+  margin: 0;
+  /* Обнуляем отступы */
 }
 .one_pic_main_img_wrap img {
   width: 100%;
+  /* Ширина изображений */
+  height: 100%;
+  /* Высота изображении */
+  object-fit: cover;
+  /* Вписываем фотографию в область */
+  padding-bottom: 10px;
 }
 .prev_btn {
   margin-left: -130px;
+}
+/* GALLERY*/
+.gallery_item {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
 }
 /* FOOTER */
 .footer {

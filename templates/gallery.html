@@ -1,1 +1,40 @@
-<h5> Gallery will be here </h5>
+<div ng-controller="GalleryCtrl">
+    <h5> Gallery will be here </h5>
+    <div class="row">
+        <div class="col col-xs-2">
+            <ul class="gallery_fileter">
+                Техника
+                <li class="gallery_filter_item"><a   class="gallery_filter_link">масло </a></li>
+                <li class="gallery_filter_item"><a class="gallery_filter_link">акварель </a></li>
+                <li class="gallery_filter_item"><a class="gallery_filter_link">холст</a></li>
+                <li class="gallery_filter_item"><a class="gallery_filter_link">разное </a></li>
+
+
+            </ul>
+            <ul class="gallery_fileter">
+                Тематика
+                <li class="gallery_filter_item"><a ng-click="checkFilter('пейзаж')" class="gallery_filter_link">пейзаж </a></li>
+                <li class="gallery_filter_item"><a ng-click="checkFilter('люди')" class="gallery_filter_link"> люди</a></li>
+                <li class="gallery_filter_item"><a ng-click="checkFilter('цветы')"  class="gallery_filter_link"> цветы</a></li>
+                <li class="gallery_filter_item"><a  ng-click="checkFilter('коты')" class="gallery_filter_link"> коты </a></li>
+                <li class="gallery_filter_item"><a  ng-click="checkFilter('Одесса')" class="gallery_filter_link"> Одесса</a></li>
+
+            </ul>
+        </div>
+        <div class="col col-xs-10">
+            <pop-work-item
+                    class="gallery_item" ng-repeat="item in galleryItem
+
+                    | filter: { description : check}
+                    | limitTo:limitValue
+"
+
+            >
+
+            </pop-work-item>
+            <button ng-click="more()">more</button>
+
+        </div>
+
+    </div>
+</div>
