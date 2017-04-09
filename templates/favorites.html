@@ -1,0 +1,12 @@
+<div ng-controller="FavoriteCtrl">
+   <p> Favorites </p>
+
+    <favotite-item ng-repeat="pic in fv track by $index "></favotite-item>
+    <p ng-repeat="Fpic in fv track by $index ">
+
+       {{Fpic.messageName}}
+        {{Fpic.messageId}}
+    {{Fpic.messageMaterials}}
+
+    </p>
+</div>

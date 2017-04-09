@@ -31,13 +31,13 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
 
  -->
-
-
-
     <script src="index.js"></script>
+    <script src="./controllers/GlobalCrtl.js"></script>
     <script src="./controllers/mainPageCtrl.js"></script>
     <script src="./services/picturesService.js"></script>
+    <script src="./services/favoriteServics.js"></script>
     <script src="./controllers/CarouselController.js"></script>
+    <script src="./controllers/favoriteCtrl.js"></script>
 
     <script src="./controllers/popularController.js"> </script>
 
@@ -46,8 +46,10 @@
     <script src="./controllers/ContactsCtrl.js"> </script>
 
     <script src="./directives/popWorkItem.html"></script>
+    <script src="./directives/favoriteItem.html"></script>
 
     <script src="./directives/popWorkItem.js"></script>
+    <script src="./directives/favoriteItem.js"></script>
 
     <link rel="stylesheet" href="./style/style.css">
 
@@ -86,7 +88,7 @@
 
 </header>
 
-<section class="content_section container " >
+<section ng-controller="GlobalCtrl" class="content_section container " >
     <div ng-view></div>
 </section>
 

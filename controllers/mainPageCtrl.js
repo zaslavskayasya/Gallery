@@ -1,4 +1,4 @@
-app.controller('mainPageCtrl', function ($scope, $rootScope, $routeParams) {
+app.controller('mainPageCtrl', function ($scope,  $rootScope, $routeParams) {
 
 
     $scope.onlyOne = true;

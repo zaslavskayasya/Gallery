@@ -6,7 +6,7 @@ app.config(function($routeProvider) {
             templateUrl : "templates/main.html"
         })
         .when("/about", {
-            templateUrl : "templates/about.html"
+            templateUrl : "templates/favorites.html"
         })
         .when("/gallery", {
             templateUrl : "templates/gallery.html"

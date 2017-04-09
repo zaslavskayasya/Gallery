@@ -1,10 +1,11 @@
-app.controller('onePicCtrl', function ($scope, $routeParams, $rootScope ) {
+app.controller('onePicCtrl', function ($scope,  $routeParams, $rootScope ) {
 
     $scope.id = this.id;
 
-    $scope.fvorite = [];
 
 
+
+    $scope.datArr = [ ];
 
 
   $scope.$on("messageEvent", function (event, args) {
@@ -16,19 +17,20 @@ app.controller('onePicCtrl', function ($scope, $routeParams, $rootScope ) {
         $scope.description = args.messageDeascription;
         console.log($scope.name);
         return $scope.newI = args;
-
-
-
     });
 
-    $scope.addToFavorite = function () {
-        $scope.add = [];
-        $scope.add =  $scope.add.push($scope.newI);
-        console.log($scope.newI);
+    $scope.addDataFunc = function () {
+        console.log('hi addDataFunc ');
+        console.log(typeof $scope.fvorite);
+        $scope.fvorite.push($scope.newI);
+        console.log($scope.fvorite);
+        return  $scope.fvorite ;
 
     };
-    $scope.add = [];
-    console.log($scope.add);
+    $rootScope.fvorite = [ ];
+    console.log($scope.datArr);
+    console.log(typeof $scope.datArr);
+    console.log(typeof $scope.fvorite);
 
     localStorage.setItem('myKey', $scope.name);
     var localValue = localStorage.getItem('myKey');
