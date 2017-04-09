@@ -2,7 +2,7 @@
 <html ng-app="Gallery">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Gallery</title>
+    <title>Gallery1</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
 
@@ -23,19 +23,20 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
 
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
 
--->
+ -->
 
 
 
     <script src="index.js"></script>
     <script src="./controllers/mainPageCtrl.js"></script>
+    <script src="./services/picturesService.js"></script>
     <script src="./controllers/CarouselController.js"></script>
 
     <script src="./controllers/popularController.js"> </script>
@@ -57,24 +58,24 @@
 <header class="container-fluid header " >
 
     <div class="center-block header_logo">
-     <img src="img/art-gallery.png">
+        <img src="img/art-gallery.png">
     </div>
     <nav class="header_nav">
         <div class="container">
-        <ul class="nav  center-block nav-justified ">
-            <li class="nav-item ">
-                <a class="nav-link header_link"  href="#/"> Главная </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link header_link"  href="#about"> Избранное </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link header_link" href="#gallery"> Галаерея </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link header_link" href="#contacts"> Контакты </a>
-            </li>
-        </ul>
+            <ul class="nav  center-block nav-justified ">
+                <li class="nav-item ">
+                    <a class="nav-link header_link"  href="#/"> Главная </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header_link"  href="#about"> Избранное </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header_link" href="#gallery"> Галаерея </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header_link" href="#contacts"> Контакты </a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="header_underline">
@@ -92,23 +93,23 @@
 
 <footer class="container-fluid footer ">
     <div class="container">
-    <div class="row ">
-        <nav class="nav col col-xs-3 pull-left ">
+        <div class="row ">
+            <nav class="nav col col-xs-3 pull-left ">
 
-            <li class="nav-item footer_item">
-               <a href="#" class="nav-link footer_item_link"> <i class="fa fa-phone" aria-hidden="true"></i></span> +380 63 745 6006</a>
-            </li>
+                <li class="nav-item footer_item">
+                    <a href="#" class="nav-link footer_item_link"> <i class="fa fa-phone" aria-hidden="true"></i></span> +380 63 745 6006</a>
+                </li>
 
-            <li class="nav-item footer_item">
-                <a href="#" class="nav-link footer_item_link"><i class="fa fa-envelope" aria-hidden="true"></i>Fosh.design@gmail.com</a>
-            </li>
-        </nav>
-        <div class="col col-xs-3 footer_logo pull-right ">
-           <div class="footer_img_wrap  ">
-               <img class="" src="img/art-gallery_gold.png">
-           </div>
+                <li class="nav-item footer_item">
+                    <a href="#" class="nav-link footer_item_link"><i class="fa fa-envelope" aria-hidden="true"></i>Fosh.design@gmail.com</a>
+                </li>
+            </nav>
+            <div class="col col-xs-3 footer_logo pull-right ">
+                <div class="footer_img_wrap  ">
+                    <img class="" src="img/art-gallery_gold.png">
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 </footer>
 

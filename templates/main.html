@@ -73,7 +73,7 @@
                     <img class="line_img " src="./img/img.jpg">
                 </div>
                 <div class="col col-xs-6 line_item">
-                   <p class="line_item_style"> Акварель </p>
+                    <p class="line_item_style"> Акварель </p>
                     <p class="line_item_name"> Весеннее натроение </p>
                     <button class="line_item_button"> Подробнее </button>
                 </div>
@@ -112,11 +112,14 @@
     <div ng-show="onlyOne" class="container popular " ng-controller="popularController">
         <p class="popular_head"> Популярные  работы </p>
         <div class="row">
-        <pop-work-item  class="col col-sm-3 popular_item" ng-repeat="item in popItem"></pop-work-item>
+            <pop-work-item
+                    class="col col-sm-3 popular_item"
+                    ng-repeat="item in popItem | filter: { popular : true}
+                    | limitTo: 8" ></pop-work-item>
         </div>
 
         <button class="popular_button">
-                Сотреть все работы
+            Сотреть все работы
         </button>
 
     </div>
