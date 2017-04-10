@@ -66,15 +66,28 @@
         </div>
     </div>
 
-    <div class="row line" ng-show="onlyOne" >
+    <div class="row line" ng-show="false"  >
         <div class="col col-xs-12 col-md-4">
             <div class="row">
                 <div class="col col-xs-6 line_img_wrap">
-                    <img class="line_img " src="./img/img.jpg">
+                    <img class="line_img " src="./img/14.jpg">
                 </div>
                 <div class="col col-xs-6 line_item">
                     <p class="line_item_style"> Акварель </p>
-                    <p class="line_item_name"> Весеннее натроение </p>
+                    <p class="line_item_name"> Здесь будет акция </p>
+                    <button class="line_item_button"> Подробнее </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col col-xs-12 col-md-4">
+            <div class="row">
+                <div class="col col-xs-6 line_img_wrap">
+                    <img class="line_img " src="./img/12.jpg">
+                </div>
+                <div class="col col-xs-6 line_item">
+                    <p class="line_item_style"> Акварель </p>
+                    <p class="line_item_name"> здесь будет предложение </p>
                     <button class="line_item_button"> Подробнее </button>
                 </div>
             </div>
@@ -87,20 +100,7 @@
                 </div>
                 <div class="col col-xs-6 line_item">
                     <p class="line_item_style"> Акварель </p>
-                    <p class="line_item_name"> Весеннее натроение </p>
-                    <button class="line_item_button"> Подробнее </button>
-                </div>
-            </div>
-
-        </div>
-        <div class="col col-xs-12 col-md-4">
-            <div class="row">
-                <div class="col col-xs-6 line_img_wrap">
-                    <img class="line_img " src="./img/img.jpg">
-                </div>
-                <div class="col col-xs-6 line_item">
-                    <p class="line_item_style"> Акварель </p>
-                    <p class="line_item_name"> Весеннее натроение </p>
+                    <p class="line_item_name"> И тут будет акция </p>
                     <button class="line_item_button"> Подробнее </button>
                 </div>
             </div>
@@ -125,7 +125,7 @@
     </div>
 
     <div ng-show="!onlyOne"  class="one_pic" ng-controller="onePicCtrl" >
-        <button ng-show="!onlyOne" ng-click="prev()" class="popular_button prev_btn"> <- Назад</button>
+        <button ng-show="!onlyOne" ng-click="prev()" class="popular_button prev_btn"> <- </button>
 
         <p class="one_pic_name">{{name}}</p>
 

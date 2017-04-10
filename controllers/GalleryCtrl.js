@@ -30,5 +30,7 @@ app.controller('GalleryCtrl', function ($scope, $rootScope, pictures, $routePara
 
      $scope.galleryItem = pictures.pictures;
 
+     $scope.len = $scope.length
+
 
 });

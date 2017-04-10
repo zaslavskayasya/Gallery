@@ -4,7 +4,7 @@
         <div class="col col-xs-2">
             <ul class="gallery_filter">
                 <p class="gallery_group_name">Техника  </p>
-                <li class="gallery_filter_item"><a  ng-click="reset('')" class="gallery_filter_link">все </a></li>
+                <li class="gallery_filter_item"><a  ng-click="reset('')" class="gallery_filter_link">Сброс </a></li>
                 <li class="gallery_filter_item"><a  ng-click="TechFilter('масло')" class="gallery_filter_link">масло </a></li>
                 <li class="gallery_filter_item"><a ng-click="TechFilter('акварель')" class="gallery_filter_link">акварель </a></li>
                 <li class="gallery_filter_item"><a ng-click="TechFilter('холст')" class="gallery_filter_link">холст</a></li>
@@ -14,7 +14,7 @@
             </ul>
             <ul class="gallery_filter">
                 <p class="gallery_group_name"> Тематика </p>
-                <li class="gallery_filter_item"><a ng-click="reset('')" class="gallery_filter_link">Все </a></li>
+                <li class="gallery_filter_item"><a ng-click="reset('')" class="gallery_filter_link">Сброс </a></li>
                 <li class="gallery_filter_item"><a ng-click="checkFilter('пейзаж')" class="gallery_filter_link">пейзаж </a></li>
                 <li class="gallery_filter_item"><a ng-click="checkFilter('люди')" class="gallery_filter_link"> люди</a></li>
                 <li class="gallery_filter_item"><a ng-click="checkFilter('цветы')"  class="gallery_filter_link"> цветы</a></li>
@@ -24,6 +24,9 @@
             </ul>
         </div>
         <div class="col col-xs-10" ng-show="onlyOne" ng-controller="popularController">
+           <div class="gallery_length">
+               Всего работ  {{popItem.length}}
+           </div>
             <pop-work-item
                     class="gallery_item" ng-repeat="item in popItem
 
@@ -31,7 +34,6 @@
                     | filter: { description : check}
                     | limitTo:limitValue
 "
-
             >
 
             </pop-work-item>
@@ -41,7 +43,7 @@
 
     </div>
     <div ng-show="!onlyOne"  class="one_pic" ng-controller="onePicCtrl" >
-        <button ng-show="!onlyOne" ng-click="prev()" class="popular_button prev_btn"> <- Назад</button>
+        <button ng-show="!onlyOne" ng-click="prev()" class="popular_button prev_btn"> <- </button>
 
         <p class="one_pic_name">{{name}}</p>
 
