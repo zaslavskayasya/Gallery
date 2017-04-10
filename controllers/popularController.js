@@ -16,7 +16,7 @@ app.controller('popularController', function ($scope, $rootScope, $routeParams, 
             mesHideOther: $scope.hideit = false,
         });
         $scope.$storage = $localStorage.$default({
-            messageName: name,
+            messageName1: name,
         });
     };
 

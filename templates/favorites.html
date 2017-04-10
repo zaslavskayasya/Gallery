@@ -4,9 +4,13 @@
     <favotite-item ng-repeat="pic in fv track by $index "></favotite-item>
     <p ng-repeat="Fpic in fv track by $index ">
 
-       {{Fpic.messageName}}
+        {{Fpic.messageName}}
         {{Fpic.messageId}}
-    {{Fpic.messageMaterials}}
+        {{Fpic.messageMaterials}}
 
     </p>
+    <h2 ng-repeat="pict in data  track by $index ">
+        {{pict.messageName}}
+
+    </h2>
 </div>
