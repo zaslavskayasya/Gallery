@@ -1,8 +1,10 @@
 
 <div >
 
-
-    <p class="popular_name"> {{pic.messageName}} / {{pic.messageId}} </p>
-    <p class="popular_description">  {{pic.messageMaterials}} </p>
+    <div class="popular_img_wrap">
+        <a > <img class="popular_img" ng-src="{{pict.messageImage}}" > </a>
+    </div>
+    <p class="popular_name"> {{pict.messageName}} / {{pict.messageId}} </p>
+    <p class="popular_description">  {{pict.messageMaterials}} </p>
 
 </div>

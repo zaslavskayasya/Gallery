@@ -1,6 +1,6 @@
 <div class="gallery" ng-controller="GalleryCtrl">
     <h5 class="section_name"> Галерея </h5>
-    <div class="row">
+    <div ng-show="onlyOne" class="row">
         <div class="col col-xs-2">
             <ul class="gallery_filter">
                 <p class="gallery_group_name">Техника  </p>
@@ -22,9 +22,9 @@
 
             </ul>
         </div>
-        <div class="col col-xs-10">
+        <div class="col col-xs-10" ng-show="onlyOne" ng-controller="popularController">
             <pop-work-item
-                    class="gallery_item" ng-repeat="item in galleryItem
+                    class="gallery_item" ng-repeat="item in popItem
 
                     | filter: { description : check}
                     | limitTo:limitValue
@@ -33,9 +33,42 @@
             >
 
             </pop-work-item>
-            <button class="popular_button" ng-click="more()">Загрузить больше работ</button>
+            <button ng-show="onlyOne" class="popular_button" ng-click="more()">Загрузить больше работ</button>
 
         </div>
+
+    </div>
+    <div ng-show="!onlyOne"  class="one_pic" ng-controller="onePicCtrl" >
+        <button ng-show="!onlyOne" ng-click="prev()" class="popular_button prev_btn"> <- Назад</button>
+
+        <p class="one_pic_name">{{name}}</p>
+
+        <div class="row">
+            <div class="col col-xs-3">
+                <div class="one_pic_main_img_wrap">
+                    <img ng-src="{{img}}">
+                </div>
+                <div class="one_pic_little_pics">
+                    <div class="row">
+                        <img class="col col-xs-4" ng-src="tree.jpeg">
+                        <img class="col col-xs-4" ng-src="tree.jpeg">
+                        <img class="col col-xs-4" ng-src="tree.jpeg">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-xs-9 one_pic_descr_block">
+                <p class="one_pic_size"> {{size}} </p>
+                <p class="one_pic_material"> {{materials}} </p>
+                <button class="add_button" ng-click="addDataFunc()">В избранное</button>
+
+                <div class="line"></div>
+                <div class="one_pic_description">
+                    {{description}}
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </div>

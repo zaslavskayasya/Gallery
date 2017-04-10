@@ -15,9 +15,10 @@ app.controller('popularController', function ($scope, $rootScope, $routeParams, 
             messageDeascription: $scope.popItem = description,
             mesHideOther: $scope.hideit = false,
         });
-        $scope.$storage = $localStorage.$default({
+       /* $scope.$storage = $localStorage.$default({
             messageName1: name,
-        });
+        });*/
+
     };
 
 });

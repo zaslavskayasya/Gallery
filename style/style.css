@@ -1,7 +1,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+body {
   font-family: 'Open Sans', sans-serif;
 }
 .large {
@@ -26,7 +27,7 @@ h4 {
 .header .header_link {
   text-transform: uppercase;
   color: #fff;
-  transition: 0.3s ease-out 0.3s;
+  transition: 0.1s ease-out 0.1s;
 }
 .header .header_link:hover {
   color: #afa376;
@@ -34,12 +35,13 @@ h4 {
 .header .header_underline {
   height: 35px;
   background-color: #e6e6e6;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 /*  SLIDER */
 .slider_img {
   height: 445px;
   width: 100%;
+  position: relative;
 }
 .carousel-control {
   display: none;
@@ -66,7 +68,7 @@ h4 {
 .carousel_button {
   position: absolute;
   bottom: 10px;
-  right: -30px;
+  right: -100px;
   background-color: #fff;
   text-transform: uppercase;
   border: none;
@@ -76,7 +78,7 @@ h4 {
   font-weight: 300;
   font-size: 16px;
   padding: 10px 30px;
-  transition: 0.3s ease-out 0.3s;
+  transition: 0.1s ease-out 0.1s;
 }
 .carousel_button:hover {
   background-color: #afa376;
@@ -102,15 +104,15 @@ h4 {
 .author_block .author_name {
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 800;
+  letter-spacing: 4px;
   font-size: 24px;
 }
 .author_block .author_description {
   font-family: 'Open Sans', sans-serif;
   color: #96a6a6;
-  margin: 10px auto;
   margin-bottom: 50px;
-  width: 240px;
+  letter-spacing: 4px;
 }
 .author_block .author_social {
   list-style: none;
@@ -123,7 +125,7 @@ h4 {
   text-decoration: none;
   padding: 0px 15px;
   color: #000;
-  transition: 0.3s ease-out 0.3s;
+  transition: 0.1s ease-out 0.1s;
 }
 .author_block .author_social .author_social_item .author_social_hidden {
   display: none;
@@ -134,9 +136,17 @@ h4 {
 /* LINE */
 .line_img_wrap {
   overflow: hidden;
+  width: 190px;
+  height: 190px;
+  margin: 0;
+}
+.line_img_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .line_item {
-  padding: 20px;
+  padding: 10px;
   height: 100%;
   text-align: center;
 }
@@ -157,7 +167,7 @@ h4 {
   border: 1px solid #afa376;
   text-transform: uppercase;
   padding: 10px 20px;
-  transition: 0.3s ease-out 0.3s;
+  transition: 0.1s ease-out 0.1s;
 }
 .line_item .line_item_button:hover {
   background-color: #afa376;
@@ -185,6 +195,10 @@ h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 1;
+}
+.popular_img:hover {
+  opacity: 0.6;
 }
 .popular_item {
   margin: 10px 0px;
@@ -195,29 +209,38 @@ h4 {
 }
 .popular_name {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 16px;
   padding: 10px 0px;
   margin-bottom: 0px;
+  text-align: left;
 }
 .popular_description {
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
   color: #cccccc;
+  text-align: left;
 }
 .popular_button {
   margin-bottom: 30px;
-  padding: 10px 30px;
+  margin-top: 30px;
+  padding: 17px 44px;
+  font-weight: 100;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   background-color: #afa376;
   border: 1px solid #afa376;
-  transition: 0.3s ease-out 0.3s;
+  transition: 0.1s ease-out 0.1s;
 }
 .popular_button:hover {
   background-color: #fff;
   color: #afa376;
+}
+/* FAVORITES*/
+.content {
+  padding: 40px 0px;
 }
 /* ONE PIC*/
 .one_pic {
@@ -242,7 +265,7 @@ h4 {
   color: #fff;
   background-color: #afa376;
   border: 1px solid #afa376;
-  transition: 0.3s ease-out 0.3s;
+  transition: 0.1s ease-out 0.1s;
 }
 .one_pic .add_button:hover {
   background-color: #fff;
@@ -294,7 +317,7 @@ h4 {
 }
 .gallery .gallery_filter .gallery_filter_link {
   padding: 10px 30px 10px 10px;
-  transition: 0.3s ease-out 0.3s;
+  transition: 0.1s ease-out 0.1s;
   text-decoration: none;
   width: 100%;
   color: #000;
@@ -331,7 +354,7 @@ h4 {
   font-weight: 500;
 }
 .contacts_block .contacts_description {
-  color: #767676;
+  color: #879999;
   font-size: 13px ;
   padding-bottom: 20px;
 }
@@ -341,7 +364,7 @@ h4 {
 .contacts_block .contacts_type {
   text-transform: uppercase;
   font-size: 15px;
-  color: #767676;
+  color: #879999;
   margin-bottom: 0px;
 }
 .contacts_block .contact_item {
@@ -356,7 +379,7 @@ h4 {
 .form input[type="text"],
 .form input[type="email"] {
   background-color: #f6f6f6;
-  color: #767676;
+  color: #879999;
   padding: 10px 30px;
   border: 1px solid #9fa2a5;
 }
@@ -377,7 +400,7 @@ h4 {
   position: absolute;
   top: 15px;
   padding-left: 10px;
-  color: #767676;
+  color: #879999;
 }
 .form textarea {
   overflow: auto;

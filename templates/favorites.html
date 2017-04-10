@@ -1,16 +1,9 @@
-<div ng-controller="FavoriteCtrl">
-   <p> Favorites </p>
+<div class="content" ng-controller="FavoriteCtrl">
+   <p class="section_name"> Избранное </p>
+  <div class="row">
+      <favotite-item class="col col-sm-3 popular_item" ng-repeat="pict in data  track by $index "></favotite-item>
+      <favotite-item class="col col-sm-3 popular_item" ng-repeat="pict in fv track by $index "></favotite-item>
+  </div>
 
-    <favotite-item ng-repeat="pic in fv track by $index "></favotite-item>
-    <p ng-repeat="Fpic in fv track by $index ">
 
-        {{Fpic.messageName}}
-        {{Fpic.messageId}}
-        {{Fpic.messageMaterials}}
-
-    </p>
-    <h2 ng-repeat="pict in data  track by $index ">
-        {{pict.messageName}}
-
-    </h2>
 </div>

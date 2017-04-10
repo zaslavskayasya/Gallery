@@ -6,7 +6,7 @@ app.factory('pictures', function() {
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
                 size : '40 X 50',
-                materials: 'масло, холст',
+                materials: 'масло',
                 description: 'коты',
                 popular: true,
 
@@ -15,8 +15,8 @@ app.factory('pictures', function() {
                 id: 2,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '30 X 57',
+                materials: 'холст',
                 description: 'люди',
                 popular: true
 
@@ -25,8 +25,8 @@ app.factory('pictures', function() {
                 id: 3,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '34 X 50',
+                materials: 'холст',
                 description: 'пейзаж',
                 popular: true
 
@@ -35,8 +35,8 @@ app.factory('pictures', function() {
                 id: 4,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '38 X 50',
+                materials: 'акварель',
                 description: 'цветы',
                 popular: true
 
@@ -45,8 +45,8 @@ app.factory('pictures', function() {
                 id: 5,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '35 X 50',
+                materials: 'масло',
                 description: 'Одесса',
                 popular: true
 
@@ -56,8 +56,8 @@ app.factory('pictures', function() {
                 image : './img/img.jpg',
                 imageUrl : './img/img',
                 name : 'Весеннее настроение1',
-                size : '40 X 50',
-                materials: 'масло, холст',
+                size : '40 X 45',
+                materials: 'масло',
                 description: 'коты',
                 popular: true
 
@@ -66,8 +66,8 @@ app.factory('pictures', function() {
                 id: 7,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '30 X 80',
+                materials: 'холст',
                 description: 'люди',
                 popular: true
 
@@ -76,8 +76,8 @@ app.factory('pictures', function() {
                 id: 8,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '70 X 50',
+                materials: 'акварель',
                 description: 'пейзаж',
                 popular: true
 
@@ -86,8 +86,8 @@ app.factory('pictures', function() {
                 id: 9,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '30 X 60',
+                materials: 'холст',
                 description: 'Одесса',
                 popular: true
 
@@ -96,8 +96,8 @@ app.factory('pictures', function() {
                 id: 10,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '40 X 50',
+                materials: '',
                 description: 'Одесса',
                 popular: true
 
@@ -106,8 +106,8 @@ app.factory('pictures', function() {
                 id: 11,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '50 X 50',
+                materials: 'холст',
                 description: 'Одесса',
                 popular: true
 
@@ -116,8 +116,8 @@ app.factory('pictures', function() {
                 id: 12,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '30 X 55',
+                materials: 'акварель',
                 description: 'Одесса',
                 popular: false
 
@@ -126,8 +126,8 @@ app.factory('pictures', function() {
                 id: 13,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '40 X 50',
+                materials: 'холст',
                 description: 'Одесса',
                 popular: false
 
@@ -136,8 +136,8 @@ app.factory('pictures', function() {
                 id: 14,
                 image : './img/img.jpg',
                 name : 'Весеннее настроение1',
-                size : '30 X 50',
-                materials: 'frdfhtkm, холст',
+                size : '30 X 80',
+                materials: 'холст',
                 description: 'коты',
                 popular: true
 
