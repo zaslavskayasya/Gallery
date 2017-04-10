@@ -4,10 +4,11 @@
         <div class="col col-xs-2">
             <ul class="gallery_filter">
                 <p class="gallery_group_name">Техника  </p>
-                <li class="gallery_filter_item"><a   class="gallery_filter_link">масло </a></li>
-                <li class="gallery_filter_item"><a class="gallery_filter_link">акварель </a></li>
-                <li class="gallery_filter_item"><a class="gallery_filter_link">холст</a></li>
-                <li class="gallery_filter_item"><a class="gallery_filter_link">разное </a></li>
+                <li class="gallery_filter_item"><a  ng-click="reset('')" class="gallery_filter_link">все </a></li>
+                <li class="gallery_filter_item"><a  ng-click="TechFilter('масло')" class="gallery_filter_link">масло </a></li>
+                <li class="gallery_filter_item"><a ng-click="TechFilter('акварель')" class="gallery_filter_link">акварель </a></li>
+                <li class="gallery_filter_item"><a ng-click="TechFilter('холст')" class="gallery_filter_link">холст</a></li>
+                <li class="gallery_filter_item"><a ng-click="TechFilter('разное')"class="gallery_filter_link">разное </a></li>
 
 
             </ul>
@@ -26,6 +27,7 @@
             <pop-work-item
                     class="gallery_item" ng-repeat="item in popItem
 
+                    | filter: { materials : checkTech}
                     | filter: { description : check}
                     | limitTo:limitValue
 "
@@ -33,7 +35,7 @@
             >
 
             </pop-work-item>
-            <button ng-show="onlyOne" class="popular_button" ng-click="more()">Загрузить больше работ</button>
+            <button ng-show="onlyOne" class="popular_button gallery_button" ng-click="more()">Загрузить больше работ</button>
 
         </div>
 

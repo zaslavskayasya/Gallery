@@ -20,6 +20,10 @@ app.controller('GalleryCtrl', function ($scope, $rootScope, pictures, $routePara
           $scope.check = value;
           console.log(value);
      };
+     $scope.TechFilter = function (value) {
+          $scope.checkTech = value;
+          console.log(value);
+     };
      $scope.reset = function (value) {
           $scope.check = value;
      };
