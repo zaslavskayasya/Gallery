@@ -1,0 +1,28 @@
+@media screen and (max-width: 1191px) {
+    .author_block {
+        width: 95%;
+        padding: 10px 10px;
+
+    }
+    }@media screen and (max-width: 900px) {
+    .popular{
+        padding: 20px 30px;
+    }
+    .author_block {
+        margin:10px
+
+    }
+    .form {
+        width: 441px;
+    }
+    .footer {
+        padding: 0px 20px;
+    }
+    .footer nav {
+        margin-top: 20px;
+    }
+    .footer .footer_img_wrap {
+        padding: 31px;
+        margin-left: -79px;
+    }
+}
